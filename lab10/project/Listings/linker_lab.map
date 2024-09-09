@@ -1,0 +1,317 @@
+Component: Arm Compiler for Embedded 6.19 Tool: armlink [5e73cb00]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(.text.main) refers to toggle.o(.text.toggle) for toggle
+    main.o(.text.main) refers to main.o(.bss.last) for [Anonymous Symbol]
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    toggle.o(.text.toggle) refers to toggle.o(.data.value) for [Anonymous Symbol]
+    toggle.o(.ARM.exidx.text.toggle) refers to toggle.o(.text.toggle) for [Anonymous Symbol]
+    datainit_ctboard.o(.text) refers to __scatter.o(!!!scatter) for __scatterload
+    datainit_ctboard.o(.text) refers to main.o(.text.main) for main
+    datainit_ctboard.o(.text) refers (Weak) to startup_ctboard.o(STACK) for Stack_Mem
+    startup_ctboard.o(RESET) refers to startup_ctboard.o(STACK) for __initial_sp
+    startup_ctboard.o(RESET) refers to startup_ctboard.o(.text) for Reset_Handler
+    startup_ctboard.o(.text) refers to system_ctboard.o(.text.__system) for __system
+    startup_ctboard.o(.text) refers to datainit_ctboard.o(.text) for __main
+    system_ctboard.o(.text) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.text.__system) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.text.__system) refers to system_ctboard.o(.text.system_enter_run) for system_enter_run
+    system_ctboard.o(.ARM.exidx.text.__system) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.__system) refers to system_ctboard.o(.text.__system) for [Anonymous Symbol]
+    system_ctboard.o(.text.system_enter_run) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.text.system_enter_run) refers to system_ctboard.o(.text.init_SystemClock) for init_SystemClock
+    system_ctboard.o(.text.system_enter_run) refers to system_ctboard.o(.text.init_FPU) for init_FPU
+    system_ctboard.o(.text.system_enter_run) refers to system_ctboard.o(.text.init_FMC_SRAM) for init_FMC_SRAM
+    system_ctboard.o(.text.system_enter_run) refers to system_ctboard.o(.text.init_LCD) for init_LCD
+    system_ctboard.o(.ARM.exidx.text.system_enter_run) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.system_enter_run) refers to system_ctboard.o(.text.system_enter_run) for [Anonymous Symbol]
+    system_ctboard.o(.text.init_SystemClock) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.text.init_SystemClock) refers to hal_rcc.o(.text.hal_rcc_reset) for hal_rcc_reset
+    system_ctboard.o(.text.init_SystemClock) refers to hal_rcc.o(.text.hal_rcc_set_osc) for hal_rcc_set_osc
+    system_ctboard.o(.text.init_SystemClock) refers to hal_rcc.o(.text.hal_rcc_setup_pll) for hal_rcc_setup_pll
+    system_ctboard.o(.text.init_SystemClock) refers to hal_pwr.o(.text.hal_pwr_set_overdrive) for hal_pwr_set_overdrive
+    system_ctboard.o(.text.init_SystemClock) refers to hal_rcc.o(.text.hal_rcc_setup_clock) for hal_rcc_setup_clock
+    system_ctboard.o(.ARM.exidx.text.init_SystemClock) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.init_SystemClock) refers to system_ctboard.o(.text.init_SystemClock) for [Anonymous Symbol]
+    system_ctboard.o(.text.init_FPU) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.init_FPU) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.init_FPU) refers to system_ctboard.o(.text.init_FPU) for [Anonymous Symbol]
+    system_ctboard.o(.text.init_FMC_SRAM) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.text.init_FMC_SRAM) refers to hal_gpio.o(.text.hal_gpio_init_alternate) for hal_gpio_init_alternate
+    system_ctboard.o(.text.init_FMC_SRAM) refers to hal_fmc.o(.text.hal_fmc_init_sram) for hal_fmc_init_sram
+    system_ctboard.o(.ARM.exidx.text.init_FMC_SRAM) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.init_FMC_SRAM) refers to system_ctboard.o(.text.init_FMC_SRAM) for [Anonymous Symbol]
+    system_ctboard.o(.text.init_LCD) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.init_LCD) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.init_LCD) refers to system_ctboard.o(.text.init_LCD) for [Anonymous Symbol]
+    system_ctboard.o(.text.system_enter_sleep) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.system_enter_sleep) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.system_enter_sleep) refers to system_ctboard.o(.text.system_enter_sleep) for [Anonymous Symbol]
+    system_ctboard.o(.text.system_enter_stop) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.system_enter_stop) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.system_enter_stop) refers to system_ctboard.o(.text.system_enter_stop) for [Anonymous Symbol]
+    system_ctboard.o(.text.system_enter_standby) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.system_enter_standby) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text.system_enter_standby) refers to system_ctboard.o(.text.system_enter_standby) for [Anonymous Symbol]
+    system_ctboard.o(.text._sys_command_string) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text._sys_command_string) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text._sys_command_string) refers to system_ctboard.o(.text._sys_command_string) for [Anonymous Symbol]
+    system_ctboard.o(.text._ttywrch) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text._ttywrch) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text._ttywrch) refers to system_ctboard.o(.text._ttywrch) for [Anonymous Symbol]
+    system_ctboard.o(.text._sys_exit) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text._sys_exit) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
+    system_ctboard.o(.ARM.exidx.text._sys_exit) refers to system_ctboard.o(.text._sys_exit) for [Anonymous Symbol]
+    hal_fmc.o(.text.hal_fmc_reset) refers to assert.o(.text) for __aeabi_assert
+    hal_fmc.o(.text.hal_fmc_reset) refers to hal_fmc.o(.rodata.str1.1) for [Anonymous Symbol]
+    hal_fmc.o(.ARM.exidx.text.hal_fmc_reset) refers to hal_fmc.o(.text.hal_fmc_reset) for [Anonymous Symbol]
+    hal_fmc.o(.text.hal_fmc_init_sram) refers to assert.o(.text) for __aeabi_assert
+    hal_fmc.o(.text.hal_fmc_init_sram) refers to hal_fmc.o(.rodata.str1.1) for [Anonymous Symbol]
+    hal_fmc.o(.ARM.exidx.text.hal_fmc_init_sram) refers to hal_fmc.o(.text.hal_fmc_init_sram) for [Anonymous Symbol]
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_reset) refers to hal_gpio.o(.text.hal_gpio_reset) for [Anonymous Symbol]
+    hal_gpio.o(.text.hal_gpio_init_input) refers to hal_gpio.o(.text.intercept_overwrite_register) for intercept_overwrite_register
+    hal_gpio.o(.text.hal_gpio_init_input) refers to hal_gpio.o(.text.create_pattern_mask) for create_pattern_mask
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_init_input) refers to hal_gpio.o(.text.hal_gpio_init_input) for [Anonymous Symbol]
+    hal_gpio.o(.ARM.exidx.text.intercept_overwrite_register) refers to hal_gpio.o(.text.intercept_overwrite_register) for [Anonymous Symbol]
+    hal_gpio.o(.text.create_pattern_mask) refers to aeabi_sdiv.o(.text) for __aeabi_uidiv
+    hal_gpio.o(.ARM.exidx.text.create_pattern_mask) refers to hal_gpio.o(.text.create_pattern_mask) for [Anonymous Symbol]
+    hal_gpio.o(.text.hal_gpio_init_analog) refers to hal_gpio.o(.text.hal_gpio_init_input) for hal_gpio_init_input
+    hal_gpio.o(.text.hal_gpio_init_analog) refers to hal_gpio.o(.text.create_pattern_mask) for create_pattern_mask
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_init_analog) refers to hal_gpio.o(.text.hal_gpio_init_analog) for [Anonymous Symbol]
+    hal_gpio.o(.text.hal_gpio_init_output) refers to hal_gpio.o(.text.intercept_overwrite_register) for intercept_overwrite_register
+    hal_gpio.o(.text.hal_gpio_init_output) refers to hal_gpio.o(.text.create_pattern_mask) for create_pattern_mask
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_init_output) refers to hal_gpio.o(.text.hal_gpio_init_output) for [Anonymous Symbol]
+    hal_gpio.o(.text.hal_gpio_init_alternate) refers to hal_gpio.o(.text.hal_gpio_init_output) for hal_gpio_init_output
+    hal_gpio.o(.text.hal_gpio_init_alternate) refers to hal_gpio.o(.text.create_pattern_mask) for create_pattern_mask
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_init_alternate) refers to hal_gpio.o(.text.hal_gpio_init_alternate) for [Anonymous Symbol]
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_input_read) refers to hal_gpio.o(.text.hal_gpio_input_read) for [Anonymous Symbol]
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_output_read) refers to hal_gpio.o(.text.hal_gpio_output_read) for [Anonymous Symbol]
+    hal_gpio.o(.text.hal_gpio_output_write) refers to hal_gpio.o(.text.intercept_overwrite_register) for intercept_overwrite_register
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_output_write) refers to hal_gpio.o(.text.hal_gpio_output_write) for [Anonymous Symbol]
+    hal_gpio.o(.text.hal_gpio_bit_set) refers to hal_gpio.o(.text.intercept_overwrite_register) for intercept_overwrite_register
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_bit_set) refers to hal_gpio.o(.text.hal_gpio_bit_set) for [Anonymous Symbol]
+    hal_gpio.o(.text.hal_gpio_bit_reset) refers to hal_gpio.o(.text.intercept_overwrite_register) for intercept_overwrite_register
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_bit_reset) refers to hal_gpio.o(.text.hal_gpio_bit_reset) for [Anonymous Symbol]
+    hal_gpio.o(.text.hal_gpio_bit_toggle) refers to hal_gpio.o(.text.intercept_overwrite_register) for intercept_overwrite_register
+    hal_gpio.o(.text.hal_gpio_bit_toggle) refers to hal_gpio.o(.text.hal_gpio_output_read) for hal_gpio_output_read
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_bit_toggle) refers to hal_gpio.o(.text.hal_gpio_bit_toggle) for [Anonymous Symbol]
+    hal_gpio.o(.text.hal_gpio_irq_set) refers to hal_gpio.o(.text.get_syscfg_mask) for get_syscfg_mask
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_irq_set) refers to hal_gpio.o(.text.hal_gpio_irq_set) for [Anonymous Symbol]
+    hal_gpio.o(.ARM.exidx.text.get_syscfg_mask) refers to hal_gpio.o(.text.get_syscfg_mask) for [Anonymous Symbol]
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_irq_status) refers to hal_gpio.o(.text.hal_gpio_irq_status) for [Anonymous Symbol]
+    hal_gpio.o(.ARM.exidx.text.hal_gpio_irq_clear) refers to hal_gpio.o(.text.hal_gpio_irq_clear) for [Anonymous Symbol]
+    hal_pwr.o(.ARM.exidx.text.hal_pwr_reset) refers to hal_pwr.o(.text.hal_pwr_reset) for [Anonymous Symbol]
+    hal_pwr.o(.ARM.exidx.text.hal_pwr_set_backup_domain) refers to hal_pwr.o(.text.hal_pwr_set_backup_domain) for [Anonymous Symbol]
+    hal_pwr.o(.ARM.exidx.text.hal_pwr_set_backup_access) refers to hal_pwr.o(.text.hal_pwr_set_backup_access) for [Anonymous Symbol]
+    hal_pwr.o(.ARM.exidx.text.hal_pwr_set_wakeup_pin) refers to hal_pwr.o(.text.hal_pwr_set_wakeup_pin) for [Anonymous Symbol]
+    hal_pwr.o(.ARM.exidx.text.hal_pwr_set_flash_powerdown) refers to hal_pwr.o(.text.hal_pwr_set_flash_powerdown) for [Anonymous Symbol]
+    hal_pwr.o(.ARM.exidx.text.hal_pwr_set_overdrive) refers to hal_pwr.o(.text.hal_pwr_set_overdrive) for [Anonymous Symbol]
+    hal_pwr.o(.ARM.exidx.text.hal_pwr_set_underdrive) refers to hal_pwr.o(.text.hal_pwr_set_underdrive) for [Anonymous Symbol]
+    hal_rcc.o(.ARM.exidx.text.hal_rcc_reset) refers to hal_rcc.o(.text.hal_rcc_reset) for [Anonymous Symbol]
+    hal_rcc.o(.text.hal_rcc_set_peripheral) refers to assert.o(.text) for __aeabi_assert
+    hal_rcc.o(.text.hal_rcc_set_peripheral) refers to hal_rcc.o(.rodata.str1.1) for [Anonymous Symbol]
+    hal_rcc.o(.ARM.exidx.text.hal_rcc_set_peripheral) refers to hal_rcc.o(.text.hal_rcc_set_peripheral) for [Anonymous Symbol]
+    hal_rcc.o(.ARM.exidx.text.hal_rcc_set_osc) refers to hal_rcc.o(.text.hal_rcc_set_osc) for [Anonymous Symbol]
+    hal_rcc.o(.text.hal_rcc_setup_pll) refers to assert.o(.text) for __aeabi_assert
+    hal_rcc.o(.text.hal_rcc_setup_pll) refers to hal_rcc.o(.rodata.str1.1) for [Anonymous Symbol]
+    hal_rcc.o(.ARM.exidx.text.hal_rcc_setup_pll) refers to hal_rcc.o(.text.hal_rcc_setup_pll) for [Anonymous Symbol]
+    hal_rcc.o(.text.hal_rcc_setup_clock) refers to assert.o(.text) for __aeabi_assert
+    hal_rcc.o(.text.hal_rcc_setup_clock) refers to hal_rcc.o(.rodata.str1.1) for [Anonymous Symbol]
+    hal_rcc.o(.ARM.exidx.text.hal_rcc_setup_clock) refers to hal_rcc.o(.text.hal_rcc_setup_clock) for [Anonymous Symbol]
+    use_no_semi_2.o(.text) refers (Special) to use_no_semi.o(.text) for __use_no_semihosting_swi
+    assert.o(.text) refers to assert_puts.o(.text) for __assert_puts
+    assert.o(.text) refers to aeabi_sdiv.o(.text) for __aeabi_idivmod
+    assert.o(.text) refers to abort.o(.text) for abort
+    __scatter.o(!!!scatter) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    aeabi_idiv0_sigfpe.o(.text) refers to rt_div0.o(.text) for __rt_div0
+    abort.o(.text) refers to defsig_abrt_outer.o(.text) for __rt_SIGABRT
+    abort.o(.text) refers (Weak) to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    abort.o(.text) refers to system_ctboard.o(.text._sys_exit) for _sys_exit
+    assert_puts.o(.text) refers to system_ctboard.o(.text._ttywrch) for _ttywrch
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(.text.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to datainit_ctboard.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    rt_div0.o(.text) refers to defsig_fpe_outer.o(.text) for __rt_SIGFPE
+    defsig_abrt_outer.o(.text) refers to defsig_abrt_inner.o(.text) for __rt_SIGABRT_inner
+    defsig_abrt_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_abrt_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to system_ctboard.o(.text._sys_exit) for _sys_exit
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    defsig_exit.o(.text) refers to system_ctboard.o(.text._sys_exit) for _sys_exit
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_outer.o(.text) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig_fpe_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_fpe_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000034) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000006) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000010) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_relocate_pie_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000035) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000027) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_user_alloc_1
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to system_ctboard.o(.text._ttywrch) for _ttywrch
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$0000001A) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000028) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000029) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to system_ctboard.o(.text._sys_exit) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    defsig.o(CL$$defsig) refers to defsig_abrt_inner.o(.text) for __rt_SIGABRT_inner
+    defsig.o(CL$$defsig) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to system_ctboard.o(.text._sys_command_string) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing toggle.o(.text), (0 bytes).
+    Removing toggle.o(.ARM.exidx.text.toggle), (8 bytes).
+    Removing startup_ctboard.o(HEAP), (2048 bytes).
+    Removing system_ctboard.o(.text), (0 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text.__system), (8 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text.system_enter_run), (8 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text.init_SystemClock), (8 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text.init_FPU), (8 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text.init_FMC_SRAM), (8 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text.init_LCD), (8 bytes).
+    Removing system_ctboard.o(.text.system_enter_sleep), (2 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text.system_enter_sleep), (8 bytes).
+    Removing system_ctboard.o(.text.system_enter_stop), (2 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text.system_enter_stop), (8 bytes).
+    Removing system_ctboard.o(.text.system_enter_standby), (2 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text.system_enter_standby), (8 bytes).
+    Removing system_ctboard.o(.text._sys_command_string), (12 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text._sys_command_string), (8 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text._ttywrch), (8 bytes).
+    Removing system_ctboard.o(.ARM.exidx.text._sys_exit), (8 bytes).
+    Removing hal_fmc.o(.text), (0 bytes).
+    Removing hal_fmc.o(.text.hal_fmc_reset), (264 bytes).
+    Removing hal_fmc.o(.ARM.exidx.text.hal_fmc_reset), (8 bytes).
+    Removing hal_fmc.o(.ARM.exidx.text.hal_fmc_init_sram), (8 bytes).
+    Removing hal_gpio.o(.text), (0 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_reset), (120 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_reset), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_init_input), (126 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_init_input), (8 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.intercept_overwrite_register), (8 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.create_pattern_mask), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_init_analog), (84 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_init_analog), (8 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_init_output), (8 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_init_alternate), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_input_read), (14 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_input_read), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_output_read), (14 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_output_read), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_output_write), (42 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_output_write), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_bit_set), (54 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_bit_set), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_bit_reset), (54 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_bit_reset), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_bit_toggle), (78 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_bit_toggle), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_irq_set), (888 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_irq_set), (8 bytes).
+    Removing hal_gpio.o(.text.get_syscfg_mask), (272 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.get_syscfg_mask), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_irq_status), (76 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_irq_status), (8 bytes).
+    Removing hal_gpio.o(.text.hal_gpio_irq_clear), (28 bytes).
+    Removing hal_gpio.o(.ARM.exidx.text.hal_gpio_irq_clear), (8 bytes).
+    Removing hal_pwr.o(.text), (0 bytes).
+    Removing hal_pwr.o(.text.hal_pwr_reset), (24 bytes).
+    Removing hal_pwr.o(.ARM.exidx.text.hal_pwr_reset), (8 bytes).
+    Removing hal_pwr.o(.text.hal_pwr_set_backup_domain), (164 bytes).
+    Removing hal_pwr.o(.ARM.exidx.text.hal_pwr_set_backup_domain), (8 bytes).
+    Removing hal_pwr.o(.text.hal_pwr_set_backup_access), (52 bytes).
+    Removing hal_pwr.o(.ARM.exidx.text.hal_pwr_set_backup_access), (8 bytes).
+    Removing hal_pwr.o(.text.hal_pwr_set_wakeup_pin), (52 bytes).
+    Removing hal_pwr.o(.ARM.exidx.text.hal_pwr_set_wakeup_pin), (8 bytes).
+    Removing hal_pwr.o(.text.hal_pwr_set_flash_powerdown), (52 bytes).
+    Removing hal_pwr.o(.ARM.exidx.text.hal_pwr_set_flash_powerdown), (8 bytes).
+    Removing hal_pwr.o(.ARM.exidx.text.hal_pwr_set_overdrive), (8 bytes).
+    Removing hal_pwr.o(.text.hal_pwr_set_underdrive), (14 bytes).
+    Removing hal_pwr.o(.ARM.exidx.text.hal_pwr_set_underdrive), (8 bytes).
+    Removing hal_rcc.o(.text), (0 bytes).
+    Removing hal_rcc.o(.ARM.exidx.text.hal_rcc_reset), (8 bytes).
+    Removing hal_rcc.o(.text.hal_rcc_set_peripheral), (500 bytes).
+    Removing hal_rcc.o(.ARM.exidx.text.hal_rcc_set_peripheral), (8 bytes).
+    Removing hal_rcc.o(.ARM.exidx.text.hal_rcc_set_osc), (8 bytes).
+    Removing hal_rcc.o(.ARM.exidx.text.hal_rcc_setup_pll), (8 bytes).
+    Removing hal_rcc.o(.ARM.exidx.text.hal_rcc_setup_clock), (8 bytes).
+
+79 unused section(s) (total 5402 bytes) removed from the image.
